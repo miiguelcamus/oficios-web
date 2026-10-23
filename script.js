@@ -12,10 +12,9 @@ var open=(d>=1&&d<=5&&t>=480&&t<1200)||(d===6&&t>=540&&t<840);var lv=$('#live');
 if(lv){lv.textContent=open?'Técnicos disponibles hoy en Madrid':'Fuera de horario · urgencias 24 h';lv.style.setProperty('--c',open?'#2bb673':'#ff5a1f')}
 // plano: longitud de trazos
 $$('.ln path,.ln circle,.ln rect').forEach(function(p){try{p.style.setProperty('--len',Math.ceil(p.getTotalLength()))}catch(e){}});
-// botones magnéticos + cursor
+// botones magnéticos
 if(fine&&!RM){$$('.mag').forEach(function(el){el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;el.style.transform='translate('+x*.22+'px,'+y*.35+'px)'});
-el.addEventListener('mouseleave',function(){el.style.transform=''})});
-})})}
+el.addEventListener('mouseleave',function(){el.style.transform=''})})}
 // contadores
 function count(el){var to=+el.dataset.count,dec=+(el.dataset.dec||0),suf=el.dataset.suf||'',s=null;function f(ts){if(!s)s=ts;var k=Math.min((ts-s)/1400,1),v=to*(1-Math.pow(1-k,3));el.textContent=(dec?v.toFixed(dec).replace('.',','):Math.round(v).toLocaleString('es-ES'))+suf;if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
 // reveal
