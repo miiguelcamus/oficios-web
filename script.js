@@ -15,8 +15,7 @@ $$('.ln path,.ln circle,.ln rect').forEach(function(p){try{p.style.setProperty('
 // botones magnéticos + cursor
 if(fine&&!RM){$$('.mag').forEach(function(el){el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;el.style.transform='translate('+x*.22+'px,'+y*.35+'px)'});
 el.addEventListener('mouseleave',function(){el.style.transform=''})});
-var c=$('.cursor');addEventListener('mousemove',function(e){c.style.left=e.clientX+'px';c.style.top=e.clientY+'px';c.style.opacity=1});
-$$('a,button,.opt,input[type=range],summary').forEach(function(el){el.addEventListener('mouseenter',function(){c.classList.add('big')});el.addEventListener('mouseleave',function(){c.classList.remove('big')})})}
+})})}
 // contadores
 function count(el){var to=+el.dataset.count,dec=+(el.dataset.dec||0),suf=el.dataset.suf||'',s=null;function f(ts){if(!s)s=ts;var k=Math.min((ts-s)/1400,1),v=to*(1-Math.pow(1-k,3));el.textContent=(dec?v.toFixed(dec).replace('.',','):Math.round(v).toLocaleString('es-ES'))+suf;if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
 // reveal
