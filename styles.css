@@ -117,6 +117,12 @@ blockquote{padding:18px;gap:12px}blockquote p{font-size:1rem}
 .srow h2{font-size:1.6rem;margin-bottom:6px}.srow ul{margin-top:10px;gap:4px 20px}.sr-p b{font-size:1.2rem}
 .form{padding:24px;gap:14px}.fl input,.fl textarea{padding:20px 12px 6px}.cc{padding:16px}.cards,.socs{gap:10px}.soc{padding:12px}
 .fg{gap:30px}
+/* contacto compacto */
+.phd.pc{padding:26px 0 16px}.phd.pc h1{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:8px 0 8px}.phd.pc .lead{font-size:.94rem}
+.sec.pc{padding:26px 0 34px}.pc .cg{gap:20px}.pc .form{padding:18px;gap:10px;border-radius:18px}.pc .cl{margin-bottom:6px}.pc .opt{padding:6px 12px;font-size:.8rem}.pc .opts{gap:6px}
+.pc .fl input,.pc .fl textarea{padding:17px 11px 5px;font-size:.92rem;border-radius:10px}.pc .fl label{top:12px;font-size:.88rem}.pc .fl input:focus+label,.pc .fl input:not(:placeholder-shown)+label,.pc .fl textarea:focus+label,.pc .fl textarea:not(:placeholder-shown)+label{top:4px;font-size:.66rem}
+.pc .cards,.pc .socs{gap:8px}.pc .cc{padding:12px 14px;border-radius:14px;gap:2px}.pc .cc b{font-size:1.05rem}.pc .cc small{font-size:.8rem}.pc .soc{padding:10px;gap:10px;border-radius:14px}.pc .soc svg{width:30px;height:30px;padding:6px}.pc .soc b{font-size:.92rem}.pc .soc small{font-size:.7rem}
+.pc .btn{font-size:.86rem;padding:5px 5px 5px 16px}.pc .ba{width:30px;height:30px}
 @media(max-width:1020px){.menu{display:none;position:absolute;top:100%;left:16px;right:16px;flex-direction:column;border-radius:16px;padding:8px}.menu.open{display:flex}.burger{display:block}.hcta{display:none}
 .hg,.qg,.zg,.fq,.cg{grid-template-columns:1fr}.sgrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.rev{grid-template-columns:1fr}.srow{grid-template-columns:1fr}.sheet{transform:none}}
 @media(max-width:600px){.top{padding:10px 16px}.ul{display:none}.sgrid,.steps,.form,.fg{grid-template-columns:1fr}.trust{grid-template-columns:1fr 1fr}.sec{padding:34px 0}.hero{padding:20px 0 30px}.srow ul{grid-template-columns:1fr}.btns .btn{flex:1 1 100%;justify-content:space-between}
